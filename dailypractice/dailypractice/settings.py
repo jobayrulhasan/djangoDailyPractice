@@ -14,6 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+template_dir =  BASE_DIR / 'templates'
 
 
 # Quick-start development settings - unsuitable for production
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'dailypractice.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [template_dir],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
